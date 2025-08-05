@@ -17,3 +17,7 @@ ggplot(gapminder_1952) +
         aes(x = lifeExp, y = gdpPercap, color = continent)
     )
 ```
+
+```{r}
+
+```
