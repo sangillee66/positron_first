@@ -1,0 +1,19 @@
+---
+title: "Untitled"
+format: html
+---
+
+## 이상일 바보
+
+```{r}
+library(tidyverse)
+library(gapminder)
+gapminder |>
+    filter(
+        year == 1952
+    ) -> gapminder_1952
+ggplot(gapminder_1952) +
+    geom_point(
+        aes(x = lifeExp, y = gdpPercap, color = continent)
+    )
+```
